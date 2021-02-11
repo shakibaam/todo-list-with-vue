@@ -5,7 +5,10 @@
         <p>
             <input type="checkbox" v-on:change="markComplete">
 
-            {{todo.title}}</p>
+            {{todo.title}}
+            <button class="del">remove</button>
+
+        </p>
 
     </div>
 </template>
@@ -15,9 +18,9 @@
     export default {
         name: "TodoItem",
         props: ["todo"],
-        methods:{
-            markComplete(){
-                this.todo.completed= !this.todo.completed;
+        methods: {
+            markComplete() {
+                this.todo.completed = !this.todo.completed;
             }
         }
 
@@ -36,5 +39,23 @@
     .is-complete {
         text-decoration: line-through;
     }
+
+    .del {
+        background: deeppink;
+        border-radius: 50%;
+        text-align: center;
+        padding: 5px;
+        position: absolute;
+        right: 150px;
+        border:deeppink ;
+        color: white;
+        transition: 0.3s;
+
+    }
+    button:hover{
+        background: orchid;
+    }
+
+
 
 </style>
