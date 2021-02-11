@@ -13,10 +13,12 @@
 
 <style scoped>
     .header{
-        background: #333;
+        background: #191970;
         color: #fff;
         text-align: center;
-        padding: 10px`;
+        padding: 10px;
+        font-family: "Comic Sans MS";
+
     }
 
     .header a{

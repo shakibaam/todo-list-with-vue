@@ -36,7 +36,7 @@ export default {
       {
         id:2,
         title:"TODO tow",
-        completed:true
+        completed:false
       },
       {
         id:3,

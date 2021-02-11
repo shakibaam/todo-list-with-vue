@@ -33,9 +33,13 @@
 <style scoped>
 
     .todo-item {
-        background-color: #f4f4f4;
+        background-color: #E0FFFF;
         padding: 10px;
         border-bottom: 1px #cccccc dotted;
+        font-family: cursive;
+        margin: auto;
+
+        width: 70%;
 
     }
 
@@ -44,19 +48,20 @@
     }
 
     .del {
-        background: deeppink;
+        background: #8A2BE2;
         border-radius: 50%;
         text-align: center;
         padding: 5px;
         position: absolute;
-        right: 150px;
-        border:deeppink ;
+        right: 300px;
+        /*left: 10px;*/
+        border:#8A2BE2 ;
         color: white;
         transition: 0.3s;
 
     }
     button:hover{
-        background: orchid;
+        background: #4B0082;
     }
 
 

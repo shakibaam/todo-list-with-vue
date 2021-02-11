@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <form @submit="addTodo">
 
             <input type="text" v-model="title" name="title" placeholder="Add todo">
@@ -27,6 +27,7 @@
                     completed:false
                 }
                 this.$emit('add-todo' , newTodo);
+                this.title='';
             }
         }
     }
@@ -36,16 +37,36 @@
 
     form {
 
-        display: flex;
+        /*display: flex;*/
+        margin-left: 600px;
+        margin-top: 50px;
+        /*width: 100px;*/
     }
 
     input[type="text"] {
-        flex: 10;
+        /*flex: 10;*/
         padding: 5px;
+        border: 2px solid black;
+        font-family: 'Rubik', sans-serif;
+        outline: 0;
+        transition: .2s;
+        margin-top: 20px;
+        /*border: midnightblue;*/
     }
 
     input[type="submit"] {
-        flex: 2;
+        /*flex: 2;*/
+        padding: 12px 10px;
+        border: 0;
+        background: linear-gradient(to right, #de48b5 0%,#0097ff 100%);
+        border-radius: 3px;
+        margin-top: 10px;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: 'Rubik', sans-serif;
+        margin-left: 30px;
     }
+
+
 
 </style>
