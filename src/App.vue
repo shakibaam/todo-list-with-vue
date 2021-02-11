@@ -2,16 +2,20 @@
   <div id="app">
   <Todos v-bind:todos="todos"></Todos>
 
+
+
   </div>
 </template>
 
 <script>
   import Todos from './components/Todos'
 
+
 export default {
   name: 'App',
   components: {
-     Todos
+     Todos,
+
   },
   data(){
     return{
@@ -32,6 +36,8 @@ export default {
         completed:false
       }
     ]
+      ,
+      msg:"hi from data"
     }
   }
 }
