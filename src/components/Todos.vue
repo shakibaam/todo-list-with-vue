@@ -17,6 +17,9 @@
         props:["todos"],
         components:{
             TodoItem
+        } ,
+        methods:{
+
         }
     }
 </script>

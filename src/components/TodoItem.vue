@@ -6,7 +6,7 @@
             <input type="checkbox" v-on:change="markComplete">
 
             {{todo.title}}
-            <button class="del" @click="$emit('del-todo' , todo.id)">remove</button>
+            <button class="del" @click=deleteItem>remove</button>
 
         </p>
 
@@ -21,6 +21,9 @@
         methods: {
             markComplete() {
                 this.todo.completed = !this.todo.completed;
+            },
+            deleteItem(){
+                this.$emit('del-todo' , this.todo.id);
             }
         }
 
